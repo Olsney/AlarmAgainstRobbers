@@ -16,16 +16,16 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.W))
-            transform.Translate(Vector3.forward * _speed);
+            transform.Translate(Vector3.forward * (_speed * Time.deltaTime));
         
         if (Input.GetKey(KeyCode.S))
-            transform.Translate(Vector3.back * _speed) ;
+            transform.Translate(Vector3.back * (_speed * Time.deltaTime)) ;
         
         if (Input.GetKey(KeyCode.A))
-            transform.Translate(Vector3.left * _speed );
+            transform.Translate(Vector3.left * (_speed * Time.deltaTime));
         
         if (Input.GetKey(KeyCode.D))
-            transform.Translate(Vector3.right * _speed);
+            transform.Translate(Vector3.right * (_speed * Time.deltaTime));
         
         if (Input.GetKey(KeyCode.Space))
             _rigidbody.AddForce(Vector3.up, ForceMode.Impulse);

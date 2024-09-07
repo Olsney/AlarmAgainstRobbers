@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inHomeArea: {fileID: 1574339235}
-  _speed: 0.5
+  _speed: 0.1
 --- !u!82 &717850590
 AudioSource:
   m_ObjectHideFlags: 0
